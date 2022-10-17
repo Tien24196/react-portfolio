@@ -1,30 +1,43 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 
 
-function Nav() {
+function Nav(props) {
+
+  const {
+     NavBar = [],
+     setCurrentNav,
+     currentNav
+  } = props;
+
+  useEffect(() => {
+     document.title = currentNav;
+   }, [currentNav]);
 
   return (
     <header>
         <div >
+        <h2>
+        <a  href="/">
+           Tien Ngo
+        </a>
+        </h2>
         <nav>
+
             <ul className="flex-row">
-               <li className="mx-2">
-                    <a href="#about">
-                    About me
-                    </a>
-               </li>
-               <li className="mx-2">
-                    <span>Contact</span>
-               </li>
-               <li className="mx-2">
-                    <span>Portfolio</span>
-               </li>
-               <li className="mx-2">
-                    <span>Resume</span>
-               </li>
+               {NavBar.map((nav) => (
+                    <li className={`mx-2 ${
+                         currentNav === nav && 'navActive'
+                         }`} key={nav} >
+                         <span onClick={() => {
+                              setCurrentNav(nav)
+                            }}>
+                         {nav}
+                         </span>
+                    </li>
+               ))}
                
                </ul>
-  </nav>
+        </nav>
         </div>
     </header>
   );
