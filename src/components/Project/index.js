@@ -1,8 +1,8 @@
 import React from 'react';
 function Card({image, github, deploy, topics, name }) {
     return (
-        <div className='card-container'>
-            <div className='image-container'>
+        <div className='card-container card my-2'>
+            <div className='image-container px-2 py-2'>
                 <img src={image} alt='' />
             </div>
             <div className='card-title'>

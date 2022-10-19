@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../Card'
+import Card from '../Project'
 
 
 
@@ -60,7 +60,7 @@ function Portfolio() {
     return(
 
      
-        <div className=' wrapper'>
+        <div className='wrapper'>
         
           {project.map((pro)=> (
 
