@@ -25,6 +25,9 @@ return(
                 Node.js, Express.js, SQL, Sequelize, NoSQL (MongoDB, Mongoose), API's (third-party, RESTful, server-side), Templating (Handlebars)
                 </p>
             </div>
+            <div>
+                <h2>Download my resume <a href='https://github.com/Tien24196/react-portfolio/blob/main/public/resume.docx?raw=true'>here</a></h2>
+            </div>
         </div>
 </section>
 );
