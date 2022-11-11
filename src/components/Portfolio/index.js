@@ -53,6 +53,14 @@ function Portfolio() {
         github: "https://github.com/Tien24196/Code-for-fun",
         deploy: "https://tien24196.github.io/Code-for-fun/",
         topics: "javascript, HTML, CSS, Jquery, Bootstrap "
+        },
+        {
+       
+        name: "Grear Swap",
+        image: "https://raw.githubusercontent.com/bpiper91/gear-swap/main/client/src/screenshot.PNG",
+        github: "https://github.com/bpiper91/gear-swap",
+        deploy: "https://obscure-sea-74366.herokuapp.com",
+        topics: "React, GraphQL, MongoDB "
         }
     ]
 
